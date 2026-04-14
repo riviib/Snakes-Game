@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>rivi's Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MENU SCREEN -->
+<div id="menu">
+    <h1 id="title">Snake Game</h1>
+
+    <div class="options">
+        <div>
+            <label>Speed:</label>
+            <select id="speedSelect">
+                <option value="200">Slow</option>
+                <option value="150" selected>Normal</option>
+                <option value="100">Fast</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Obstacles:</label>
+            <select id="obstacleSelect">
+                <option value="0">None</option>
+                <option value="5">Easy</option>
+                <option value="10">Medium</option>
+                <option value="15">Hard</option>
+            </select>
+        </div>
+    </div>
+
+    <button id="startBtn">START</button>
+</div>
+
+<!-- GAME CANVAS -->
+<div id="gameContainer">
+    <canvas id="gameCanvas" width="800" height="500"></canvas>
+</div>
+
+<!-- GAME OVER SCREEN -->
+<div id="gameOver">
+    <h1>Game Over</h1>
+    <p id="finalScore"></p>
+    <div class="gameOverButtons";>
+        <button id="retryBtn">Retry</button>
+        <button id="menuBtn">Menu</button>
+    </div>
+</div>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
